@@ -16,13 +16,21 @@ Default: 1
 
 --- Colors
 
-- Primary: #e67e22 
+- Primary:
+
+#e67e22 
 
 - Tints: 
+
+#fdf2e9
+
+
 - Shades: 
 - Accents: 
 - Grey: 
+
  #555
+ #333
 
 
  --- Shadows: 
@@ -37,7 +45,13 @@ Default: 1
 
 */ 
 
+/* helper classes */
 
+.margin-right-sm {
+    margin-right: 1.6rem !important;
+}
+
+/* general */
 
 * {
     margin: 0;
@@ -54,16 +68,79 @@ body {
     line-height: 1;
     font-weight: 400;
     color: #555;
+    background-color: #fdf2e9;
 }
 
+/* hero-box */
 
 .hero {
     max-width: 130rem;
-    margin: 0 auto;
+    margin: 20rem auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
+
+/* hero-texts */
+
+.heading-primary {
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.05;
+    color: #333;
+    letter-spacing: -0.5px;
+    margin-bottom: 3.2rem;
+}
+
+.hero-description {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+}
+
+/* hero-image */
 
 .hero-img {
     width: 100%;
+}
+
+/* buttons */
+
+.btn:link, .btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1.6rem 3.2rem;
+    border-radius: 15px;
+
+/* transition animation  */
+
+    transition: all 0.3s;
+}
+
+/* subscribe-button */
+
+.btn--full:link,
+.btn--full:visited {
+    background-color: #e67e22;
+    color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+    background-color: #cf711f;
+}
+
+/* learn-more-button */
+
+.btn--outline:link,
+.btn--outline:visited {
+    background-color: #fff;
+    color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+    background-color: #fdf2e9;
+    box-shadow: inset 0 0 0 3px #fff;
 }
