@@ -66,6 +66,29 @@ Default: 9px
     margin-right: 1.6rem !important;
 }
 
+.grid {
+    display: grid;
+    gap: 9.6rem;
+}
+
+.grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.container {
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
+
 /* general */
 
 * {
@@ -90,7 +113,9 @@ body {
 /* GENERAL COMPONENTS */
 /***********************/
 
-/* HEADER */
+/***********************/
+/* Header */
+/***********************/
 
 .header {
     display: flex;
@@ -107,7 +132,9 @@ body {
     height: 2.2rem;
 }
 
-/* NAVIGATION */
+/***********************/
+/* Navigation          */
+/***********************/
 
 .main-nav-list {
     list-style: none;
@@ -117,15 +144,11 @@ body {
 
 .main-nav-link:link,
 .main-nav-link:visited {
-<<<<<<< HEAD
     display: inline-block;
-=======
->>>>>>> 5c87281c8f706a444bab6cf6419136ec863747d4
     text-decoration: none;
     color: #333;
     font-weight: 500;
     font-size: 1.8rem;
-<<<<<<< HEAD
 
     transition: all 0.3s;
 }
@@ -150,13 +173,9 @@ body {
 }
 
 
-=======
-}
-
->>>>>>> 5c87281c8f706a444bab6cf6419136ec863747d4
-
-
-/* HERO */
+/***********************/
+/* HERO                */
+/***********************/
 
 /* Hero-box */
 
@@ -169,9 +188,6 @@ body {
     max-width: 130rem;
     margin: 0 auto;
     padding: 0 3.2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 9.6rem;
     align-items: center;
 }
 
@@ -198,7 +214,9 @@ body {
     width: 100%;
 }
 
-/* BUTTONS */
+/***********************/
+/* Buttons             */
+/***********************/
 
 .btn:link, .btn:visited {
     display: inline-block;
@@ -241,7 +259,9 @@ body {
 }
 
 
-/* DELIVERED */
+/***********************/
+/* Delivered           */
+/***********************/
 
 .delivered-meals {
     display: flex;
@@ -283,4 +303,7 @@ body {
 }
 
 
+/***********************/
+/* Section HOW         */
+/***********************/
 
