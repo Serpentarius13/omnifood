@@ -117,11 +117,15 @@ body {
 
 .main-nav-link:link,
 .main-nav-link:visited {
+<<<<<<< HEAD
     display: inline-block;
+=======
+>>>>>>> 5c87281c8f706a444bab6cf6419136ec863747d4
     text-decoration: none;
     color: #333;
     font-weight: 500;
     font-size: 1.8rem;
+<<<<<<< HEAD
 
     transition: all 0.3s;
 }
@@ -146,6 +150,10 @@ body {
 }
 
 
+=======
+}
+
+>>>>>>> 5c87281c8f706a444bab6cf6419136ec863747d4
 
 
 /* HERO */
