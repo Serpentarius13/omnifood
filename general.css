@@ -73,9 +73,9 @@ Default: 9px
 
 */ 
 
-*:focus {
+.cta *:focus {
     outline: none;
-    box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+    box-shadow: 0 0 0 3px rgba(230, 125, 34, 0.5);
 }
 
 /* helper classes */
@@ -120,6 +120,10 @@ Default: 9px
 
 .grid--4-cols {
     grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .container {
