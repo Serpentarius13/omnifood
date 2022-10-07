@@ -43,6 +43,8 @@ Small: 0.75px
 
 #fae5d3
 
+#45260a
+
 
 - Shades: 
 - Accents: 
@@ -70,6 +72,11 @@ Default: 9px
 
 
 */ 
+
+*:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
 
 /* helper classes */
 
@@ -175,6 +182,7 @@ body {
 /* Buttons             */
 /***********************/
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -183,6 +191,10 @@ body {
   font-weight: 600;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
+
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 
   /* transition animation  */
 
@@ -223,7 +235,7 @@ body {
     text-decoration: none;
     border-bottom: 1px solid currentColor;
     padding-bottom: 2px;
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
 
 .link:hover,
