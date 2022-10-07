@@ -42,6 +42,9 @@ const obs = new IntersectionObserver(
 
         if (ent.isIntersecting === false)
             document.body.classList.add("sticky"); 
+        else {
+            document.body.classList.remove("sticky");
+        }
     },
     {
         root: null,
@@ -49,6 +52,8 @@ const obs = new IntersectionObserver(
         rootMargin: "-80px",
     }
 );
+
+
 
 obs.observe(sectionHeroEl);
 
