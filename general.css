@@ -33,9 +33,11 @@ Small: 0.75px
 #e67e22 
 
 
+- Tints: 
+
 #cf711f
 
-- Tints: 
+#eb984e
 
 #fdf2e9
 
@@ -79,8 +81,8 @@ Default: 9px
     margin-bottom: 3.2rem !important;
 }
 
-.margin-bottom-lg {
-    margin-bottom: 9.6rem !important;
+.margin-top-lg {
+    margin-top: 9.6rem !important;
 }
 
 .center-text {
@@ -91,6 +93,10 @@ Default: 9px
     display: grid;
     row-gap: 9.6rem;
     column-gap: 4.8rem;
+}
+
+.grid:not(:last-child) {
+    margin-bottom: 9.6rem;
 }
 
 .grid--center-v {
